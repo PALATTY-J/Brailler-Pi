@@ -12,7 +12,9 @@ GPIO.setup(23,GPIO.OUT)
 #time.sleep(0.1)
 #os.system("omxplayer --vol +940 /home/pi/Brailler-Pi/2.mp3")
 #time.sleep(0.1)
+while True:
+    GPIO.output(23,1)
+    time.sleep(0.1)
+    GPIO.output(23,0)
+    
 
-GPIO.output(23,1)
-time.sleep(0.1)
-GPIO.output(23,0)

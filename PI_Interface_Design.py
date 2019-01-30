@@ -3,10 +3,14 @@ import time
 import RPi.GPIO as GPIO
 import serial
 
+ser = serial.Serial ("/dev/ttyS0")
+
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.cleanup()
+GPIO.setup(2,GPIO.IN)
 
+ser.baudrate = 9600                     
 
 
 os.system("omxplayer --vol +940 /home/pi/Brailler-Pi/1.mp3")

@@ -1,4 +1,5 @@
 import os
 import time
 
-print("Hello WOrld")
+os.system("omxplayer --vol +940 Hello.mp3")
+time.sleep(1)

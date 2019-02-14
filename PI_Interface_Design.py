@@ -29,7 +29,7 @@ ser.write("z01".encode())
 GPIO.wait_for_edge(2,GPIO.FALLING)
     
 
-ser.write("x03".encode())
+ser.write("x01".encode())
 GPIO.wait_for_edge(2,GPIO.FALLING)
 
 ser.write("z01".encode())
@@ -37,5 +37,5 @@ ser.write("z01".encode())
 GPIO.wait_for_edge(2,GPIO.FALLING)
     
 
-ser.write("x03".encode())
+ser.write("x01".encode())
 GPIO.wait_for_edge(2,GPIO.FALLING)

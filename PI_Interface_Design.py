@@ -24,3 +24,18 @@ time.sleep(0.1)
 
     
 
+ser.write("z01".encode())
+    
+GPIO.wait_for_edge(2,GPIO.FALLING)
+    
+
+ser.write("x03".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
+
+ser.write("z01".encode())
+    
+GPIO.wait_for_edge(2,GPIO.FALLING)
+    
+
+ser.write("x03".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)

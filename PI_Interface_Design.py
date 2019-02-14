@@ -24,7 +24,7 @@ GPIO.wait_for_edge(2,GPIO.FALLING)
 
 x=0
 
-while (x<=2):
+while (x<=21):
     ser.write("z01".encode())
     GPIO.wait_for_edge(2,GPIO.FALLING)
 
@@ -92,6 +92,7 @@ while (x<=2):
     GPIO.wait_for_edge(2,GPIO.FALLING)
     ser.write("x45".encode())
     GPIO.wait_for_edge(2,GPIO.FALLING)
-
+    
+    x=x+1
 
 

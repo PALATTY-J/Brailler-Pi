@@ -32,6 +32,7 @@ y=0
 while(y<=20):
     ser.write("z01".encode())
     GPIO.wait_for_edge(2,GPIO.FALLING)
+    y=y+1
 
     
 x=0

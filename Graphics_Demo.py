@@ -30,22 +30,36 @@ y=0
 while(y<=20):
     ser.write("z01".encode())
     GPIO.wait_for_edge(2,GPIO.FALLING)
+    y=y+1
+
+
+y=0
+
+while (y<=50):
+
+    for x in range(y):
+        
+        ser.write("z01".encode())
+        GPIO.wait_for_edge(2,GPIO.FALLING)
+
+        ser.write("f".encode())
+        GPIO.wait_for_edge(2,GPIO.FALLING)
+        ser.write("x25".encode())
+        GPIO.wait_for_edge(2,GPIO.FALLING)
+    x=0
+    for x in range(y):
+        ser.write("r".encode())
+        GPIO.wait_for_edge(2,GPIO.FALLING)
+        ser.write("x25".encode())
+        GPIO.wait_for_edge(2,GPIO.FALLING)
+        
     
-x=0
-
-while (x<=50):
-    ser.write("z01".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
-
-    ser.write("f".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
-    ser.write("x25".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
     ser.write("y01".encode())
     GPIO.wait_for_edge(2,GPIO.FALLING)
 
     ser.write("z01".encode())
     GPIO.wait_for_edge(2,GPIO.FALLING)
+    x=x+1
 
     
 

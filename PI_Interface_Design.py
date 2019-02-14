@@ -22,6 +22,12 @@ time.sleep(0.1)
 os.system("omxplayer --vol +940 /home/pi/Brailler-Pi/2.mp3")
 time.sleep(0.1)
 
+os.system("omxplayer --vol +940 /home/pi/Brailler-Pi/6.mp3")
+time.sleep(0.1)
+
+ser.write("y20".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
+
 os.system("omxplayer --vol +940 /home/pi/Brailler-Pi/4.mp3")
 time.sleep(0.1)
 

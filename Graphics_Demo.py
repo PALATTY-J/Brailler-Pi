@@ -24,7 +24,7 @@ time.sleep(0.1)
 os.system("omxplayer --vol +940 /home/pi/Brailler-Pi/6.mp3")
 time.sleep(0.1)
 
-ser.write("y5".encode())
+ser.write("y20".encode())
 GPIO.wait_for_edge(2,GPIO.FALLING)
 
 
@@ -44,30 +44,20 @@ while(y<=20):
 y=0
 
 while (y<=50):
-
-    while(x<y):
-        
-        ser.write("z01".encode())
-        GPIO.wait_for_edge(2,GPIO.FALLING)
-
-        ser.write("f".encode())
-        GPIO.wait_for_edge(2,GPIO.FALLING)
-        ser.write("x25".encode())
-        GPIO.wait_for_edge(2,GPIO.FALLING)
-    x=0
-    while(x<y):
-        ser.write("r".encode())
-        GPIO.wait_for_edge(2,GPIO.FALLING)
-        ser.write("x25".encode())
-        GPIO.wait_for_edge(2,GPIO.FALLING)
-        
-    
-    ser.write("y01".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
-
     ser.write("z01".encode())
     GPIO.wait_for_edge(2,GPIO.FALLING)
-    x=x+1
+
+    ser.write("f".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("x25".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
+
+    
+    ser.write("y03".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
+
+        
+    
 
     
 

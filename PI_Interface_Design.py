@@ -1,3 +1,4 @@
+
 import os
 import time
 import RPi.GPIO as GPIO
@@ -29,7 +30,7 @@ ser.write("z01".encode())
 GPIO.wait_for_edge(2,GPIO.FALLING)
     
 
-ser.write("x01".encode())
+ser.write("x10".encode())
 GPIO.wait_for_edge(2,GPIO.FALLING)
 
 ser.write("z01".encode())
@@ -37,5 +38,5 @@ ser.write("z01".encode())
 GPIO.wait_for_edge(2,GPIO.FALLING)
     
 
-ser.write("x01".encode())
+ser.write("x10".encode())
 GPIO.wait_for_edge(2,GPIO.FALLING)

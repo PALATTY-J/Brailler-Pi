@@ -37,7 +37,7 @@ y=0
 
 while (y<=50):
 
-    for x in range(y):
+    while(x<y):
         
         ser.write("z01".encode())
         GPIO.wait_for_edge(2,GPIO.FALLING)
@@ -47,7 +47,7 @@ while (y<=50):
         ser.write("x25".encode())
         GPIO.wait_for_edge(2,GPIO.FALLING)
     x=0
-    for x in range(y):
+    while(x<y):
         ser.write("r".encode())
         GPIO.wait_for_edge(2,GPIO.FALLING)
         ser.write("x25".encode())

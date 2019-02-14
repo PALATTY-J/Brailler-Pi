@@ -25,64 +25,63 @@ time.sleep(0.1)
 
     
 
-while True:
-    ser.write("z01".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
+ser.write("z01".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
 
-    ser.write("f".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
-    ser.write("x25".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
+ser.write("f".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
+ser.write("x25".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
     
 
 
-    ser.write("z01".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
+ser.write("z01".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
 
-    ser.write("y02".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
-
-    
-    ser.write("r".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
-    ser.write("x25".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
-
-    ser.write("z01".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
-
-    ser.write("f".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
-    ser.write("x25".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
-
-    ser.write("z01".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
-
-    ser.write("y02".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
+ser.write("y02".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
 
     
-    ser.write("r".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
-    ser.write("x25".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
+ser.write("r".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
+ser.write("x25".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
 
-    ser.write("z01".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
+ser.write("z01".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
 
-    ser.write("f".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
-    ser.write("x25".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
+ser.write("f".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
+ser.write("x25".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
 
-    ser.write("z01".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
+ser.write("z01".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
 
-    ser.write("f".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
-    ser.write("x50".encode())
-    GPIO.wait_for_edge(2,GPIO.FALLING)
+ser.write("y02".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
+
+    
+ser.write("r".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
+ser.write("x25".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
+
+ser.write("z01".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
+
+ser.write("f".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
+ser.write("x25".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
+
+ser.write("z01".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
+
+ser.write("f".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
+ser.write("y10".encode())
+GPIO.wait_for_edge(2,GPIO.FALLING)
 
 
 

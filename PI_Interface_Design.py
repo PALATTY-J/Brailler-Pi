@@ -38,7 +38,7 @@ GPIO.wait_for_edge(2,GPIO.FALLING)
 ser.write("z01".encode())
 GPIO.wait_for_edge(2,GPIO.FALLING)
 
-ser.write("y02".encode())
+ser.write("y01".encode())
 GPIO.wait_for_edge(2,GPIO.FALLING)
 
     
@@ -58,7 +58,7 @@ GPIO.wait_for_edge(2,GPIO.FALLING)
 ser.write("z01".encode())
 GPIO.wait_for_edge(2,GPIO.FALLING)
 
-ser.write("y02".encode())
+ser.write("y01".encode())
 GPIO.wait_for_edge(2,GPIO.FALLING)
 
     
@@ -80,7 +80,7 @@ GPIO.wait_for_edge(2,GPIO.FALLING)
 
 ser.write("f".encode())
 GPIO.wait_for_edge(2,GPIO.FALLING)
-ser.write("y10".encode())
+ser.write("x50".encode())
 GPIO.wait_for_edge(2,GPIO.FALLING)
 
 

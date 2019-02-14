@@ -22,68 +22,71 @@ ser.baudrate = 9600
 #os.system("omxplayer --vol +940 /home/pi/Brailler-Pi/2.mp3")
 #time.sleep(0.1)
 
-ser.write("z01".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
+x=0
 
-ser.write("f".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
-ser.write("x25".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
+while (x<=2):
+    ser.write("z01".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
 
-ser.write("z01".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("f".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("x25".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
 
-ser.write("y01".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("z01".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
 
-ser.write("r".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
-ser.write("x25".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("y01".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
 
-
-ser.write("z01".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
-
-
-ser.write("f".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
-ser.write("x25".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("r".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("x25".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
 
 
-ser.write("z01".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("z01".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
 
 
-ser.write("y01".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("f".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("x25".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
 
 
-ser.write("r".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
-ser.write("x25".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("z01".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
 
 
-ser.write("z01".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("y01".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
 
 
-ser.write("f".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
-ser.write("x25".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("r".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("x25".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
 
 
-ser.write("z01".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("z01".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
 
 
-ser.write("f".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
-ser.write("x50".encode())
-GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("f".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("x25".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
+
+
+    ser.write("z01".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
+
+
+    ser.write("f".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
+    ser.write("x45".encode())
+    GPIO.wait_for_edge(2,GPIO.FALLING)
 
 
 
